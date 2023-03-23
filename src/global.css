@@ -1,5 +1,5 @@
 :root {
-  --wite: #ffffff;
+  --white: #ffffff;
   --gray-100: #e1e1e6;
   --gray-300: #c4c4cc;
   --gray-400: #8d8d99;
@@ -8,11 +8,15 @@
   --gray-800: #202024;
   --gray-900: #121214;
 
+  --green-300: #00b37e;
   --green-500: #00875f;
 }
-
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--green-500);
+}
 * {
-  margin: 0 auto;
+  margin: 0;
   border: none;
   padding: 0;
   box-sizing: border-box;
@@ -34,6 +38,6 @@ button {
   font-size: 1rem;
 }
 
-a{
+a {
   text-decoration: none;
 }

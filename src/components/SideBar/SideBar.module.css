@@ -14,8 +14,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-
   margin-top: calc(0px - 1.5rem - 6px);
 }
 
@@ -67,5 +65,5 @@
 
 .sidebar footer a:hover {
   background: var(--green-500);
-  color: var(--gray-800);
+  color: var(--white);
 }
