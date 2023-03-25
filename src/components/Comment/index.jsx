@@ -3,10 +3,13 @@ import React from "react";
 import styles from "./Comment.module.css";
 import Avatar from "../Avatar";
 
-export default function Comment() {
+export default function Comment({ content, index, comment, setComments }) {
   return (
     <div className={styles.comment}>
-      <Avatar hasBorder={false} src="https://d30-invdn-com.investing.com/company_logo/69ffbad2d7adfbc8a3523395d55ac9ab.jpg?width=170&height=170" />
+      <Avatar
+        hasBorder={false}
+        src="https://d30-invdn-com.investing.com/company_logo/69ffbad2d7adfbc8a3523395d55ac9ab.jpg?width=170&height=170"
+      />
       <div className={styles.commentBox}>
         <div className={styles.commentContent}>
           <header>
@@ -17,11 +20,11 @@ export default function Comment() {
               </time>
             </div>
 
-            <button title="deletar comentario">
+            <button title="deletar comentario" onClick={() => {}}>
               <Trash size={24} />
             </button>
           </header>
-          <p>Muito bom dev, parabéns!!👏👏 </p>
+          <p>{content}</p>
         </div>
         <footer>
           <button>
